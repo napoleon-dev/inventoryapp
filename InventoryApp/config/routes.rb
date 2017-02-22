@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :customers
   get "customers/index"
-  get "customers/new" => "customers#index"
+  get "customers/new" => "customers#new"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
