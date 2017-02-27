@@ -1,0 +1,1 @@
+json.partial! "item_type_categories/item_type_category", item_type_category: @item_type_category

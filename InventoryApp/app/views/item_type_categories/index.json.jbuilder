@@ -1,0 +1,1 @@
+json.array! @item_type_categories, partial: 'item_type_categories/item_type_category', as: :item_type_category

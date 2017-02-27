@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170222122307) do
+ActiveRecord::Schema.define(version: 20170222131457) do
 
   create_table "customer_types", force: :cascade do |t|
     t.string   "customertype", limit: 255
@@ -45,6 +45,12 @@ ActiveRecord::Schema.define(version: 20170222122307) do
     t.integer  "itemtypecategoryid", limit: 4
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
+  end
+
+  create_table "item_type_categories", force: :cascade do |t|
+    t.string   "itemtypecategory", limit: 255
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "orders", force: :cascade do |t|
