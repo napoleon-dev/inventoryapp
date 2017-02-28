@@ -1,1 +1,17 @@
-<h1> Create new Customer<h1>
+
+<h1> Create new Customer</h1>
+<%= simple_form_for @customers  do |f| %>
+  
+
+    
+    <%=f.input:customername ,placeholder:"Enter Full Name" ,required: true %>
+    <%=f.input :customeraddress   , placeholder: 'Enter Address',required: true %>
+    <%=f.input :phonenumber , placeholder: 'Enter Phone', required: true  %>
+     <%=f.input :email, placeholder: 'Enter email',required: true  %>
+<%= f.button :submit %>
+
+
+
+<%end%>
+
+
